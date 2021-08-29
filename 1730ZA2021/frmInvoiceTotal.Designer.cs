@@ -73,10 +73,8 @@ namespace _1730ZA2021
             // 
             this.txtDiscountPercent.Location = new System.Drawing.Point(129, 40);
             this.txtDiscountPercent.Name = "txtDiscountPercent";
-            this.txtDiscountPercent.ReadOnly = true;
             this.txtDiscountPercent.Size = new System.Drawing.Size(100, 20);
             this.txtDiscountPercent.TabIndex = 3;
-            this.txtDiscountPercent.TabStop = false;
             // 
             // label3
             // 
@@ -84,7 +82,7 @@ namespace _1730ZA2021
             this.label3.Location = new System.Drawing.Point(26, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 13);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 6;
             this.label3.Text = "Discount amount:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -94,7 +92,7 @@ namespace _1730ZA2021
             this.txtDiscountAmount.Name = "txtDiscountAmount";
             this.txtDiscountAmount.ReadOnly = true;
             this.txtDiscountAmount.Size = new System.Drawing.Size(100, 20);
-            this.txtDiscountAmount.TabIndex = 5;
+            this.txtDiscountAmount.TabIndex = 7;
             this.txtDiscountAmount.TabStop = false;
             // 
             // txtTotal
@@ -103,7 +101,7 @@ namespace _1730ZA2021
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(100, 20);
-            this.txtTotal.TabIndex = 6;
+            this.txtTotal.TabIndex = 9;
             this.txtTotal.TabStop = false;
             // 
             // label4
@@ -112,7 +110,7 @@ namespace _1730ZA2021
             this.label4.Location = new System.Drawing.Point(26, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
-            this.label4.TabIndex = 7;
+            this.label4.TabIndex = 8;
             this.label4.Text = "Total:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -121,7 +119,7 @@ namespace _1730ZA2021
             this.btnCalculate.Location = new System.Drawing.Point(42, 129);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
-            this.btnCalculate.TabIndex = 8;
+            this.btnCalculate.TabIndex = 4;
             this.btnCalculate.Text = "&Calculate";
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
@@ -131,7 +129,7 @@ namespace _1730ZA2021
             this.btnExit.Location = new System.Drawing.Point(154, 129);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 9;
+            this.btnExit.TabIndex = 5;
             this.btnExit.Text = "E&xit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
