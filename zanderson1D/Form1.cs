@@ -68,10 +68,11 @@ namespace zanderson1D
                 Convert.ToDecimal(txtUSDEuro.Text)).ToString("0.00");
         }
 
-        
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
+    }
     }
 
 
