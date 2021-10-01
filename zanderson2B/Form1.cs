@@ -19,24 +19,29 @@ namespace zanderson2B
 
         private void calculate(object sender, EventArgs e)
         {
-            decimal txtAmountAustralia = 0m;
-            decimal txtRateAustralia = 0.717976m;
-            decimal txtUSTAustralia = txtAmountAustralia * txtRateAustralia;
+            decimal AmountAustralia = Convert.ToDecimal(txtAmountAustralia.Text);
+            decimal RateAustralia = 0.717976m;
+            decimal USTAustralia = AmountAustralia * RateAustralia;
+            txtUSTAustralia.Text = USTAustralia.ToString("0.00");
 
-            decimal txtAmountBhutan = 0m;
-            decimal txtRateBhutan = 0.013983m;
-            decimal txtUSTBhutan = txtAmountBhutan * txtRateBhutan;
+            decimal AmountBhutan = Convert.ToDecimal(txtAmountBhutan.Text);
+            decimal RateBhutan = 0.717976m;
+            decimal USTBhutan = AmountBhutan * RateBhutan;
+            txtAmountBhutan.Text = USTBhutan.ToString("0.00");
 
-            decimal txtAmountCostaRica = 0m;
-            decimal txtRateCostaRica = 0.0017612m;
-            decimal txtUSDCostaRica = txtAmountCostaRica * txtRateCostaRica;
+            decimal AmountEuro = Convert.ToDecimal(txtAmountEuro.Text);
+            decimal RateEuro = 0.717976m;
+            decimal USDEuro = AmountEuro * RateEuro;
+            txtAmountEuro.Text = USDEuro.ToString("0.00");
 
-            decimal txtAmountEuro = 0m;
-            decimal txtRateEuro = 1.15528m;
-            decimal txtUSDEuro = txtAmountEuro * txtRateEuro;
+            decimal AmountCostaRica = Convert.ToDecimal(txtAmountCostaRica.Text);
+            decimal RateCostaRica = 0.717976m;
+            decimal USDCostaRica = AmountCostaRica * RateCostaRica;
+            txtAmountCostaRica.Text = USDCostaRica.ToString("0.00");
 
-            decimal txtusdTotal = txtUSTAustralia + txtUSTBhutan + txtUSDCostaRica + txtUSDEuro;
 
+
+            decimal usdTotal = USTAustralia + USTBhutan + USDCostaRica + USDEuro;
         }
 
         private void button1_Click(object sender, EventArgs e)
