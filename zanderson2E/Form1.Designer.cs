@@ -82,10 +82,11 @@ namespace zanderson2E
             // 
             // input1aTextBox
             // 
-            this.input1aTextBox.Location = new System.Drawing.Point(63, 36);
+            this.input1aTextBox.Location = new System.Drawing.Point(48, 36);
             this.input1aTextBox.Name = "input1aTextBox";
             this.input1aTextBox.Size = new System.Drawing.Size(100, 20);
             this.input1aTextBox.TabIndex = 0;
+            this.input1aTextBox.Text = "250";
             // 
             // result1TextBox
             // 
@@ -108,10 +109,11 @@ namespace zanderson2E
             // 
             // input2aTextBox
             // 
-            this.input2aTextBox.Location = new System.Drawing.Point(63, 62);
+            this.input2aTextBox.Location = new System.Drawing.Point(48, 62);
             this.input2aTextBox.Name = "input2aTextBox";
             this.input2aTextBox.Size = new System.Drawing.Size(100, 20);
             this.input2aTextBox.TabIndex = 3;
+            this.input2aTextBox.Text = "4";
             // 
             // result2TextBox
             // 
@@ -124,24 +126,27 @@ namespace zanderson2E
             // 
             // input3aTextBox
             // 
-            this.input3aTextBox.Location = new System.Drawing.Point(63, 88);
+            this.input3aTextBox.Location = new System.Drawing.Point(48, 88);
             this.input3aTextBox.Name = "input3aTextBox";
             this.input3aTextBox.Size = new System.Drawing.Size(34, 20);
             this.input3aTextBox.TabIndex = 5;
+            this.input3aTextBox.Text = "true";
             // 
             // input3bTextBox
             // 
-            this.input3bTextBox.Location = new System.Drawing.Point(103, 88);
+            this.input3bTextBox.Location = new System.Drawing.Point(88, 88);
             this.input3bTextBox.Name = "input3bTextBox";
             this.input3bTextBox.Size = new System.Drawing.Size(34, 20);
             this.input3bTextBox.TabIndex = 6;
+            this.input3bTextBox.Text = "0";
             // 
             // input3cTextBox
             // 
-            this.input3cTextBox.Location = new System.Drawing.Point(143, 88);
+            this.input3cTextBox.Location = new System.Drawing.Point(128, 88);
             this.input3cTextBox.Name = "input3cTextBox";
             this.input3cTextBox.Size = new System.Drawing.Size(34, 20);
             this.input3cTextBox.TabIndex = 7;
+            this.input3cTextBox.Text = "4";
             // 
             // result3aTextBox
             // 
@@ -217,31 +222,35 @@ namespace zanderson2E
             // 
             // input7cTextBox
             // 
-            this.input7cTextBox.Location = new System.Drawing.Point(142, 192);
+            this.input7cTextBox.Location = new System.Drawing.Point(178, 192);
             this.input7cTextBox.Name = "input7cTextBox";
-            this.input7cTextBox.Size = new System.Drawing.Size(34, 20);
+            this.input7cTextBox.Size = new System.Drawing.Size(53, 20);
             this.input7cTextBox.TabIndex = 18;
+            this.input7cTextBox.Text = "1/9/2019";
             // 
             // input7bTextBox
             // 
-            this.input7bTextBox.Location = new System.Drawing.Point(102, 192);
+            this.input7bTextBox.Location = new System.Drawing.Point(112, 192);
             this.input7bTextBox.Name = "input7bTextBox";
-            this.input7bTextBox.Size = new System.Drawing.Size(34, 20);
+            this.input7bTextBox.Size = new System.Drawing.Size(60, 20);
             this.input7bTextBox.TabIndex = 17;
+            this.input7bTextBox.Text = "2/1/2019";
             // 
             // input7aTextBox
             // 
-            this.input7aTextBox.Location = new System.Drawing.Point(62, 192);
+            this.input7aTextBox.Location = new System.Drawing.Point(47, 192);
             this.input7aTextBox.Name = "input7aTextBox";
-            this.input7aTextBox.Size = new System.Drawing.Size(34, 20);
+            this.input7aTextBox.Size = new System.Drawing.Size(59, 20);
             this.input7aTextBox.TabIndex = 16;
+            this.input7aTextBox.Text = "1/1/2019";
             // 
             // input7dTextBox
             // 
-            this.input7dTextBox.Location = new System.Drawing.Point(182, 192);
+            this.input7dTextBox.Location = new System.Drawing.Point(237, 192);
             this.input7dTextBox.Name = "input7dTextBox";
-            this.input7dTextBox.Size = new System.Drawing.Size(34, 20);
+            this.input7dTextBox.Size = new System.Drawing.Size(62, 20);
             this.input7dTextBox.TabIndex = 19;
+            this.input7dTextBox.Text = "true";
             // 
             // result7TextBox
             // 
@@ -263,52 +272,59 @@ namespace zanderson2E
             // 
             // input8dTextBox
             // 
-            this.input8dTextBox.Location = new System.Drawing.Point(182, 218);
+            this.input8dTextBox.Location = new System.Drawing.Point(225, 218);
             this.input8dTextBox.Name = "input8dTextBox";
             this.input8dTextBox.Size = new System.Drawing.Size(34, 20);
             this.input8dTextBox.TabIndex = 24;
+            this.input8dTextBox.Text = "2018";
             // 
             // input8cTextBox
             // 
-            this.input8cTextBox.Location = new System.Drawing.Point(142, 218);
+            this.input8cTextBox.Location = new System.Drawing.Point(127, 218);
             this.input8cTextBox.Name = "input8cTextBox";
-            this.input8cTextBox.Size = new System.Drawing.Size(34, 20);
+            this.input8cTextBox.Size = new System.Drawing.Size(74, 20);
             this.input8cTextBox.TabIndex = 23;
+            this.input8cTextBox.Text = "part time";
             // 
             // input8bTextBox
             // 
-            this.input8bTextBox.Location = new System.Drawing.Point(102, 218);
+            this.input8bTextBox.Location = new System.Drawing.Point(87, 218);
             this.input8bTextBox.Name = "input8bTextBox";
             this.input8bTextBox.Size = new System.Drawing.Size(34, 20);
             this.input8bTextBox.TabIndex = 22;
+            this.input8bTextBox.Text = "1000";
             // 
             // input8aTextBox
             // 
-            this.input8aTextBox.Location = new System.Drawing.Point(62, 218);
+            this.input8aTextBox.Location = new System.Drawing.Point(47, 218);
             this.input8aTextBox.Name = "input8aTextBox";
             this.input8aTextBox.Size = new System.Drawing.Size(34, 20);
             this.input8aTextBox.TabIndex = 21;
+            this.input8aTextBox.Text = "1001";
             // 
             // input8eTextBox
             // 
-            this.input8eTextBox.Location = new System.Drawing.Point(222, 218);
+            this.input8eTextBox.Location = new System.Drawing.Point(265, 218);
             this.input8eTextBox.Name = "input8eTextBox";
             this.input8eTextBox.Size = new System.Drawing.Size(34, 20);
             this.input8eTextBox.TabIndex = 26;
+            this.input8eTextBox.Text = "2019";
             // 
             // input9bTextBox
             // 
-            this.input9bTextBox.Location = new System.Drawing.Point(116, 244);
+            this.input9bTextBox.Location = new System.Drawing.Point(101, 244);
             this.input9bTextBox.Name = "input9bTextBox";
             this.input9bTextBox.Size = new System.Drawing.Size(47, 20);
             this.input9bTextBox.TabIndex = 28;
+            this.input9bTextBox.Text = "4";
             // 
             // input9aTextBox
             // 
-            this.input9aTextBox.Location = new System.Drawing.Point(62, 244);
+            this.input9aTextBox.Location = new System.Drawing.Point(47, 244);
             this.input9aTextBox.Name = "input9aTextBox";
             this.input9aTextBox.Size = new System.Drawing.Size(47, 20);
             this.input9aTextBox.TabIndex = 27;
+            this.input9aTextBox.Text = "0";
             // 
             // result9bTextBox
             // 
@@ -339,31 +355,35 @@ namespace zanderson2E
             // 
             // input10dTextBox
             // 
-            this.input10dTextBox.Location = new System.Drawing.Point(182, 270);
+            this.input10dTextBox.Location = new System.Drawing.Point(167, 270);
             this.input10dTextBox.Name = "input10dTextBox";
             this.input10dTextBox.Size = new System.Drawing.Size(34, 20);
             this.input10dTextBox.TabIndex = 34;
+            this.input10dTextBox.Text = "4";
             // 
             // input10cTextBox
             // 
-            this.input10cTextBox.Location = new System.Drawing.Point(142, 270);
+            this.input10cTextBox.Location = new System.Drawing.Point(127, 270);
             this.input10cTextBox.Name = "input10cTextBox";
             this.input10cTextBox.Size = new System.Drawing.Size(34, 20);
             this.input10cTextBox.TabIndex = 33;
+            this.input10cTextBox.Text = "3";
             // 
             // input10bTextBox
             // 
-            this.input10bTextBox.Location = new System.Drawing.Point(102, 270);
+            this.input10bTextBox.Location = new System.Drawing.Point(87, 270);
             this.input10bTextBox.Name = "input10bTextBox";
             this.input10bTextBox.Size = new System.Drawing.Size(34, 20);
             this.input10bTextBox.TabIndex = 32;
+            this.input10bTextBox.Text = "2";
             // 
             // input10aTextBox
             // 
-            this.input10aTextBox.Location = new System.Drawing.Point(62, 270);
+            this.input10aTextBox.Location = new System.Drawing.Point(47, 270);
             this.input10aTextBox.Name = "input10aTextBox";
             this.input10aTextBox.Size = new System.Drawing.Size(34, 20);
             this.input10aTextBox.TabIndex = 31;
+            this.input10aTextBox.Text = "1";
             // 
             // Number1
             // 

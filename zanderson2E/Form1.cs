@@ -35,15 +35,14 @@ namespace zanderson2E
             result9bTextBox.Text = "";
 
 
-
             // #1
             decimal subtotal = Convert.ToDecimal(input1aTextBox.Text);
-            result1TextBox.Text = (subtotal >= 250 && subtotal < 500).ToString();
+            result1TextBox.Text = (LogicalOperations.q01(subtotal)).ToString();
 
             // #2.
 
             int timeInService = Convert.ToInt32(input2aTextBox.Text);
-            result2TextBox.Text = (timeInService <= 4 || timeInService >= 12).ToString();
+            result2TextBox.Text = (LogicalOperations.q02(timeInService)).ToString();
 
             // #3
 
@@ -51,25 +50,25 @@ namespace zanderson2E
             int years = Convert.ToInt32(input3cTextBox.Text);
             //
             int counter = Convert.ToInt32(input3bTextBox.Text);
-            result3aTextBox.Text = (isValid == true && counter++ < years).ToString();
+            result3aTextBox.Text = (LogicalOperations.q03(isValid, years, counter)).ToString();
             result3bTextBox.Text = counter.ToString();
 
             // #4
-
+             
             counter = Convert.ToInt32(input3bTextBox.Text);
-            result4aTextBox.Text = (isValid == true & counter++ < years).ToString();
+            result4aTextBox.Text = (LogicalOperations.q04(isValid, years, counter)).ToString();
             result4bTextBox.Text = counter.ToString();
 
             // #5
 
             counter = Convert.ToInt32(input3bTextBox.Text);
-            result5aTextBox.Text = (isValid == true || counter++ < years).ToString();
+            result5aTextBox.Text = (LogicalOperations.q05(isValid, years, counter)).ToString();
             result5bTextBox.Text = counter.ToString();
 
             // #6
 
             counter = Convert.ToInt32(input3bTextBox.Text);
-            result6aTextBox.Text = (isValid == true | counter++ < years).ToString();
+            result6aTextBox.Text = (LogicalOperations.q06(isValid, years, counter)).ToString();
             result6bTextBox.Text = counter.ToString();
 
             // #7
@@ -78,7 +77,7 @@ namespace zanderson2E
             DateTime expirationDate = Convert.ToDateTime(input7bTextBox.Text);
             DateTime date = Convert.ToDateTime(input7cTextBox.Text);
             isValid = Convert.ToBoolean(input7dTextBox.Text);
-            result7TextBox.Text = (date > startDate && date < expirationDate || isValid == true).ToString();
+            result7TextBox.Text = (LogicalOperations.q07(startDate, expirationDate, date, isValid)).ToString();
 
             // #8
 
@@ -87,25 +86,27 @@ namespace zanderson2E
             string empType = input8cTextBox.Text;
             int startYear = Convert.ToInt32(input8dTextBox.Text);
             int currentYear = Convert.ToInt32(input8eTextBox.Text);
-            result8TextBox.Text = (((thisYTD > lastYTD) || empType == "part time") && startYear < currentYear).ToString();
+            result8TextBox.Text = (LogicalOperations.q08(thisYTD, lastYTD, empType, startYear, currentYear)).ToString();
 
             // #9
 
             counter = Convert.ToInt32(input9aTextBox.Text);
             years = Convert.ToInt32(input9bTextBox.Text);
-            result9aTextBox.Text = (!(++counter >= years)).ToString();
+            result9aTextBox.Text = (LogicalOperations.q09(counter, years)).ToString();
             result9bTextBox.Text = counter.ToString();
 
-            // #9
+            // #10
             int a = Convert.ToInt32(input10aTextBox.Text);
             int b = Convert.ToInt32(input10bTextBox.Text);
             int c = Convert.ToInt32(input10cTextBox.Text);
             int d = Convert.ToInt32(input10dTextBox.Text);
-            result10TextBox.Text = (a > b && (b < c || c < d)).ToString();
+            result10TextBox.Text = (LogicalOperations.q10(a, b, c, d)).ToString();
 
 
+
+            }
 
         }
 
     }
-}
+
