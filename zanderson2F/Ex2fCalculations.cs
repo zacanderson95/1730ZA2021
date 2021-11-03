@@ -118,7 +118,7 @@ namespace zanderson2F
                 ethereum = 200m * dollars;
                 return ethereum.ToString("n2");
                 }
-                return "Invalid input";
+                return "Invalid Input";
         }
         public static string Calc08(string inputA, string inputB)
         {
@@ -134,7 +134,7 @@ namespace zanderson2F
                     addition = 5m; 
                 return total.ToString("n2");
             }
-            return "Invalid input";
+            return "Invalid Input";
         }
 
         public static string Calc09(string inputA, string inputB)
@@ -149,7 +149,7 @@ namespace zanderson2F
                 return total.ToString("n2");
             }
 
-                return "Invalid input";
+                return "Invalid Input";
         }
 
         public static string Calc10(string inputA, string inputB)
@@ -166,7 +166,7 @@ namespace zanderson2F
                     total = second / first;
                 return total.ToString("n2");
             }
-            return "Invalid input";
+            return "Invalid Input";
         }
     }
 }
