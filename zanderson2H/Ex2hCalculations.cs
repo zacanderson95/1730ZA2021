@@ -56,18 +56,15 @@ namespace zanderson2H
 
         }
 
-       /* public static string DateCalc09(string strDateA, string strDateB)
+       public static string DateCalc09(string strDateA, string strDateB)
         {
             string result = "Invalid input";
             DateTime date;
             try
             {
-                DateTime.Parse(strDateA);
-                DateTime.Parse(strDateB);
-                TimeSpan difference = strDateA - strDateB;
-                date = difference.TotalDays;
+                TimeSpan dateSpan = DateTime.Parse(strDateA) - DateTime.Parse(strDateB);
 
-                result = date.TotalDays.ToString() + " days";
+                result = dateSpan.TotalDays.ToString() + " days";
 
             }
             catch { }
