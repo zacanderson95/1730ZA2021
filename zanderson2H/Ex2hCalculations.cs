@@ -79,12 +79,13 @@ namespace zanderson2H
             DateTime date;
             try
             {
-                TimeSpan dateSpan = DateTime.Parse(strDateA) - DateTime.Parse(strDateB);
-                if (strDateB > strDateB)
+                DateTime DateA = DateTime.Parse(strDateA); 
+                DateTime DateB = DateTime.Parse(strDateB);
+                if (DateA > DateB)
                 {
                     result = date.TotalDays.ToString() + " days past due";
                 }
-                if (strDateA == strDateB)
+                if (DateA == DateB)
                 {
                     result = "On time";
                 }
