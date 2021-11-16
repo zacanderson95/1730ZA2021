@@ -75,14 +75,11 @@ namespace zanderson2H
 
         public static string DateCalc10(string strDateA, string strDateB)
         {
-       /*   string result = "Invalid input";
+            string result = "Invalid input";
             DateTime date;
             try
             {
-                DateTime.Parse(strDateA);
-                DateTime.Parse(strDateB);
-                TimeSpan difference = strDateA - strDateB;
-                date = difference.TotalDays;
+                TimeSpan dateSpan = DateTime.Parse(strDateA) - DateTime.Parse(strDateB);
                 if (strDateB > strDateB)
                 {
                     result = date.TotalDays.ToString() + " days past due";
@@ -98,7 +95,7 @@ namespace zanderson2H
 
             return result;     
 
-        } */
+        }
         // String methods
         public static string StringCalc01(string s)
         {
