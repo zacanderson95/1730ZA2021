@@ -59,12 +59,16 @@ namespace zanderson2H
        public static string DateCalc09(string strDateA, string strDateB)
         {
             string result = "Invalid input";
-            DateTime date;
+            DateTime dateA;
+            DateTime dateB;
+            TimeSpan timespan;
             try
             {
-                TimeSpan dateSpan = DateTime.Parse(strDateA) - DateTime.Parse(strDateB);
+                dateA = DateTime.Parse(strDateA);
+                dateB = DateTime.Parse(strDateB);
+                timespan = dateA - dateB;
 
-                result = dateSpan.TotalDays.ToString() + " days";
+                result = timespan.TotalDays.ToString() + " days";
 
             }
             catch { }
@@ -76,21 +80,19 @@ namespace zanderson2H
         public static string DateCalc10(string strDateA, string strDateB)
         {
             string result = "Invalid input";
-            DateTime date;
+            DateTime dateA;
+            DateTime dateB;
+            TimeSpan timespan;
             try
             {
-                DateTime DateA = DateTime.Parse(strDateA); 
-                DateTime DateB = DateTime.Parse(strDateB);
-                if (DateA > DateB)
-                {
-                    result = date.TotalDays.ToString() + " days past due";
-                }
-                if (DateA == DateB)
-                {
-                    result = "On time";
-                }
-                result = date.TotalDays.ToString() + " days";
-
+                dateA = DateTime.Parse(strDateA); 
+                dateB = DateTime.Parse(strDateB);
+                timespan = dateA - dateB;
+                if (dateA > dateB)
+                
+                    result = timespan.TotalDays.ToString() + " days past due";
+                    else
+                        result = "On time";
             }
             catch { }
 
@@ -125,9 +127,9 @@ namespace zanderson2H
         public static string StringCalc03(string s)
         {
             s = s.Trim();
-            if (s.Length > 1)
+            if (s.Length > 5)
             {
-                s = s.Substring(3, 6).ToUpper();
+                s = s.Substring(1, 4).ToUpper();
                 return s.ToUpper();
             }
             else return "Invalid input";
@@ -138,13 +140,10 @@ namespace zanderson2H
         public static string StringCalc04(string s)
         {
             s = s.Trim();
-            if (s.Length > 1)
-            {
-                s = s.PadLeft(10);
-                return s.PadLeft('*');
-            }
-            
-            else return "Invalid input";
+            char pad = '*';
+            s = s.PadLeft(10, pad);
+            return s;
+
 
         }
 
@@ -153,10 +152,10 @@ namespace zanderson2H
             s = s.Trim();
             if (s.Length > 1)
             {
-                s = s.Replace('(',' ');
-                s = s.Replace(')', ' ');
-                s = s.Replace(' ', ' ');
-                s = s.Replace('-', ' ');
+                s = s.Replace("(", "");
+                s = s.Replace(")", "");   
+                s = s.Replace("-", "");
+                s = s.Replace(" ", "");
                 return s;
             }
             else return "Invalid input";
@@ -165,17 +164,24 @@ namespace zanderson2H
         public static string StringCalc06(string s)
         {
             s = s.Trim();
-            if (s.Length > 1)
+            if (s.Length < 12)
             {
-                s = s.Replace('(', '.');
-                s = s.Replace(')', '.');
-                s = s.Replace(' ', '.');
-                s = s.Replace('-', '.');
+                s = s.Replace("(", "");
+                s = s.Replace(")", "");
+                s = s.Replace("-", "");
+                s = s.Replace(" ", "");
+                s = s.Insert(3, ".");
                 return s;
             }
-            else if (s.Length > 7)
+            else if (s.Length > 12)
             {
-                return s.Remove(s.Length, -1);
+                s = s.Replace("(", "");
+                s = s.Replace(")", "");
+                s = s.Replace("-", "");
+                s = s.Replace(" ", "");
+                s = s.Insert(3, ".");
+                s = s.Insert(7, ".");
+                return s;
             }
             else return "Invalid input";
         }
@@ -193,10 +199,12 @@ namespace zanderson2H
 
         public static string StringCalc08(string s)
         {
+            int Index = s.LastIndexOf(",");
+            int Index1 = s.LastIndexOf(" ");
             s = s.Trim();
-            if (s.Length > 1)
+            if (Index != -1)
             {
-                int Indexs = s.IndexOf(", ") + 1;
+                s = s.Remove(0, Index1 + 1);
                 return s;
             }
             else return "Invalid input";
@@ -204,10 +212,11 @@ namespace zanderson2H
 
         public static string StringCalc09(string s)
         {
+            int Index2 = s.LastIndexOf(" ");
             s = s.Trim();
-            if (s.Length > 1)
+            if (Index2 != -1)
             {
-                int Indexs = s.LastIndexOf(" ") + 1;
+                s = s.Remove(0, Index2 + 1);
                 return s;
             }
             else return "Invalid input";
@@ -216,7 +225,14 @@ namespace zanderson2H
         public static string StringCalc10(string s1, string s2, string s3)
         {
             StringBuilder sb = new StringBuilder(100);
-            return "";
+            sb = s1.Append(TextBox17.Text);
+            s1 = s1.Insert(", ");
+            sb = s2.Append(TextBox18.Text);
+            s2 = s2.Insert(", ");
+            sb = s3.Append(TextBox19.Text);
+            s3 = s3.Insert(", ");
+
+            return sb;
         }
 
 
