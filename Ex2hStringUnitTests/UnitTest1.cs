@@ -92,10 +92,10 @@ namespace Ex2hStringUnitTests
         {
             Assert.AreEqual("11111-1111", Ex2hCalculations.StringCalc09(" aaaa 11111-1111 "));
         }
-        [TestMethod]
-        public void StringCalc10_SBAppend()
-        {
-            Assert.AreEqual("aaa, bbb, ccc", Ex2hCalculations.StringCalc10("aaa", "bbb", "ccc"));
-        }
+        //[TestMethod]
+        //public void StringCalc10_SBAppend()
+        //{
+        //    Assert.AreEqual("aaa, bbb, ccc", Ex2hCalculations.StringCalc10("aaa", "bbb", "ccc"));
+        //}
     }
 }

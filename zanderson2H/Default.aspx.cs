@@ -50,7 +50,7 @@ namespace zanderson2H
             TextBox17Result.Text = Ex2hCalculations.StringCalc07(TextBox17.Text);
             TextBox18Result.Text = Ex2hCalculations.StringCalc08(TextBox18.Text);
             TextBox19Result.Text = Ex2hCalculations.StringCalc09(TextBox19.Text);
-            Label20Result.Text = Ex2hCalculations.StringCalc10(TextBox17.Text, TextBox18.Text, TextBox19.Text);
+            //Label20Result.Text = Ex2hCalculations.StringCalc10(TextBox17.Text, TextBox18.Text, TextBox19.Text);
         }
     }
 }

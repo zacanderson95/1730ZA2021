@@ -222,18 +222,18 @@ namespace zanderson2H
             else return "Invalid input";
         }
 
-        public static string StringCalc10(string s1, string s2, string s3)
-        {
-            StringBuilder sb = new StringBuilder(100);
-            sb = s1.Append(TextBox17.Text);
-            s1 = s1.Insert(", ");
-            sb = s2.Append(TextBox18.Text);
-            s2 = s2.Insert(", ");
-            sb = s3.Append(TextBox19.Text);
-            s3 = s3.Insert(", ");
+        //public static string StringCalc10(string s1, string s2, string s3)
+        //{
+        //    StringBuilder sb = new StringBuilder(100);
+        //    sb = s1.Append(TextBox17.Text);
+        //    s1 = s1.Insert(", ");
+        //    sb = s2.Append(TextBox18.Text);
+        //    s2 = s2.Insert(", ");
+        //    sb = s3.Append(TextBox19.Text);
+        //    s3 = s3.Insert(", ");
 
-            return sb;
-        }
+        //    return sb;
+        //}
 
 
     }
